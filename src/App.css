@@ -1,0 +1,214 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.App-logo {
+  display: inline-block;
+  border-radius:50%;
+  border:10px solid #00d8ff;
+  animation-name: bounce; 
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  animation-iteration-count: infinite;
+}
+.App-logo:before, .App-logo:after{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.divTable{
+  display:table;
+  max-width:20em;
+  float:right;
+  display: flex;
+  align-items: center;
+}
+.divTableRow{
+  display: table-row;
+}
+.divTableHeading{
+  background-color: #eee;
+  display: table-header-group;
+  font-weight: bold;
+}
+.divTableCell,
+.divTableHead{
+  border: 1px solid #999999;
+  display: table-cell;
+  padding: 3px 10px;
+}
+.divTableFoot{
+  background-color: #eee;
+  display: table-footer-group;
+  font-weight: bold;
+}
+.divTableBody{
+  display: table-row-group;
+}
+.divTableCell:nth-child(1n){
+  background-color: gainsboro;
+}
+.container{
+  display: flex;
+  opacity: 0.9;
+  background-color: #00d8ff;
+  justify-content: center;
+}
+img{
+  height:16em;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+input,button{
+  box-sizing:border-box;
+  color: crimson;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border: 0;
+  display: block;
+  margin: 2rem auto;
+  background-color: #ffd8d8 transparent;
+}
+#cover{
+  position: relative;
+  top:50px;
+  width: 587px;
+  padding: 35px;
+  margin: -83px auto 0 auto;
+  background-color: #ff7575;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px #ff7c7c, 0 0 0 20px #ffffffeb;
+  transform: scale(0.6);
+}
+form{
+  height: 96px;
+}
+.tb{
+  display: table;
+  width: 100%;
+}
+.td{
+  display: table-cell;
+  vertical-align: middle;
+}
+input[type="text"]{
+  width: 422px;
+  height: 66px;
+  font-size: 40px;
+  line-height: 1;
+}
+input[type="text"]::placeholder{
+  color: #e16868;
+}
+#s-cover{
+  width: 1px;
+  padding-left: 35px;
+}
+button{
+  position:relative;
+  display: block;
+  width: 84px;
+  height: 84px;
+  cursor: pointer;
+}
+#s-circle{
+  position: relative;
+  top: -4px;
+  left: 0;
+  width: 43px;
+  height: 43px;
+  margin-top: 0;
+  border-width: 15px;
+  border: 15px solid #fff;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 0.5s ease all;
+}
+button span{
+  position: absolute;
+  top: 68px;
+  left: 50px;
+  display: block;
+  width: 45px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 10px;
+  transform: rotateZ(52deg);
+  transition: 0.5s ease all;
+}
+button span:before,
+button span:after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  transform: rotateZ(0);
+  transition: 0.5s ease all;
+}
+.sp{
+  position: absolute;
+  top: 26px;
+  left: 544px;
+  background-color: #ff7575;
+}
+#s-cover:hover #s-circle{
+  top: -1;
+  width: 67px;
+  height: 15px;
+  border-width: 0;
+  background-color: #fff;
+  border-radius: 20px;
+}
+#s-cover:hover span{
+  top:50%;
+  left: 58px;
+  width: 25px;
+  margin-top: -9px;
+  transform: rotateZ(0);
+}
+#s-cover:hover button span:before{
+  bottom: 11px;
+  transform: rotateZ(52deg);
+}
+#s-cover:hover button span:after{
+  bottom: -12px;
+  transform: rotateZ(-52deg);
+}
+body{
+  background-image: url();
+}
+.lm{
+  width: 195px;
+  height: 56px;
+  border-radius: 20px;
+}
+.lm:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 10px 40px #ff7c7c, 0 0 0 20px #ffffffeb;
+  background-color: #ff7575;
+  border-radius: 20px;
+}
